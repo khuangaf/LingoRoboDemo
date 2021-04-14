@@ -1,5 +1,5 @@
 # LingoRobo
-
+To view the demo website, click this [link](https://khuangaf.github.io/LingoRoboDemo/).
 
 ## CSCI 527 Applied Machine Learning for Games 
 
