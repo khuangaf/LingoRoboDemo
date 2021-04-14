@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## LingoRobo
+
+### CSCI 527 Applied Machine Learning for Games 
 
 You can use the [editor on GitHub](https://github.com/khuangaf/LingoRoboDemo/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
