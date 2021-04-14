@@ -18,9 +18,12 @@ We develop our system on the [ALFRED dataset](https://arxiv.org/abs/1912.01734) 
 
 
 ## Methods
-__Grounding__ is one of the main challenge for ALFRED visual-language-navigation tasks 
+We approach the ALFRED dataset in two directions:
+* Common sense knowledge incorporation (Steeve)
+* Grounding between action space, visual space, and semantic space. (Shikhar)
 
-### Groun
+### Common sense knowledge incorporation
+[ConceptNet](https://conceptnet.io/) is a multi-lingual open source knowledge base that contains rich common sense knowledge. To integrate knowledge into text-based model, we need to fetch the most relevant sub-graph for each instruction. First, [Spacy Matcher](https://spacy.io/api/matcher) is used for grounding mentions in instructions to concepts in ConceptNet. Pairwise relations between grounded concepts are found by running shortest path algorithm implemented by [NetworkX](https://networkx.org/documentation/stable/index.html). Tokens in instructions are linked to corresponding concepts. Following these steps, we obtain a sub-graph for each instruction. Graph Convolutional Networks (GCN) is used for updating the token embeddings on each sub-graph. We used the [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/index.html) implementation of GCN. 
 
 
 ## Demo
@@ -28,37 +31,5 @@ __Grounding__ is one of the main challenge for ALFRED visual-language-navigation
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo&feature=emb_logo)
 
 ## Resources
-* EDD
-* Technical paper
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/khuangaf/LingoRoboDemo/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* [EDD]()
+* [Technical paper]()
