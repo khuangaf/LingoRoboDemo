@@ -13,14 +13,16 @@ Enabling AI agents following natural language instructions is critical for games
 
 ### Task
 We develop our system on the [ALFRED dataset](https://arxiv.org/abs/1912.01734) (Action Learning From Realistic Environments and Directives). ALFRED is a benchmark for challenges AI agents to a map between natural language instructions and sequences of agents.
-<div align="center">
+
 <img src="https://github.com/khuangaf/LingoRoboDemo/raw/gh-pages/alfred.jpg" width=80%/>
-</div>
 
-### Method
-#### 
 
-### 
+### Methods
+
+### Demo
+
+### Resources
+
 
 ### Markdown
 
