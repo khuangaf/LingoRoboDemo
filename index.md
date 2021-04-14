@@ -28,7 +28,7 @@ We approach the ALFRED dataset in two directions:
 
 ## Demo
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo&feature=emb_logo)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1XoRLNmXffo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Resources
 * [EDD]()
