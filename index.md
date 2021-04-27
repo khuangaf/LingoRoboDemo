@@ -31,7 +31,7 @@ We approach the ALFRED dataset in two directions:
 <img src="https://github.com/khuangaf/LingoRoboDemo/raw/gh-pages/gcn.jpg" />
 
 ### Visual grounding
-
+<img src="https://github.com/khuangaf/LingoRoboDemo/raw/gh-pages/visual_grounding.jpg" />
 
 ## Demo
 
