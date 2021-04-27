@@ -13,7 +13,7 @@ Enabling AI agents following natural language instructions is critical for games
 
 ## Workload Distribution:
 * Kung-Hsiang Steeve Huang: knowledge incorporation, project website.
-* Shikhar Singh: multimodel transformer, demo video.
+* Shikhar Singh: multimodal transformer, demo video.
 
 ## Task
 We develop our system on the [ALFRED dataset](https://arxiv.org/abs/1912.01734) (Action Learning From Realistic Environments and Directives). ALFRED is a benchmark for challenges AI agents to a map between natural language instructions and sequences of agents.
@@ -24,13 +24,13 @@ We develop our system on the [ALFRED dataset](https://arxiv.org/abs/1912.01734) 
 ## Methods
 We approach the ALFRED dataset in two directions:
 * Commonsense knowledge incorporation (Steeve)
-* Multimodel transformer. (Shikhar)
+* Multimodal transformer. (Shikhar)
 
 ### Commonsense knowledge incorporation
 [ConceptNet](https://conceptnet.io/) is a multi-lingual open source knowledge base that contains rich common sense knowledge. To integrate knowledge into text-based model, we need to fetch the most relevant sub-graph for each instruction. First, [Spacy Matcher](https://spacy.io/api/matcher) is used for grounding mentions in instructions to concepts in ConceptNet. Pairwise relations between grounded concepts are found by running shortest path algorithm implemented by [NetworkX](https://networkx.org/documentation/stable/index.html). Tokens in instructions are linked to corresponding concepts. Following these steps, we obtain a sub-graph for each instruction. Graph Convolutional Networks (GCN) is used for updating the token embeddings on each sub-graph. We used the [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/index.html) implementation of GCN. 
 <img src="https://github.com/khuangaf/LingoRoboDemo/raw/gh-pages/gcn.jpg" />
 
-### Multimodel Transformer
+### Multimodal Transformer
 <img src="https://github.com/khuangaf/LingoRoboDemo/raw/gh-pages/visual_grounding.jpg" />
 
 ## Demo
